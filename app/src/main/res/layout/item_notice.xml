@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="5dp">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/head_sculpture"
+        android:id="@+id/iv_head_sculpture"/>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/iv_head_sculpture"
+        android:id="@+id/ll_notice_name_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_notice_user_name"
+            android:ellipsize="end"
+            android:singleLine="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_notice_content"
+            android:ellipsize="end"
+            android:singleLine="true"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/normal_text"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:id="@+id/tv_notice_no_read_count"
+        android:background="@drawable/notice_count"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="1"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+</RelativeLayout>

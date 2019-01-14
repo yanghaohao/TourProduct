@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:id="@+id/rl_title">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="攻略"
+            android:id="@+id/tv_name_item"
+            android:textStyle="bold"
+            android:textSize="@dimen/big_text"
+            android:paddingTop="5dp"
+            android:paddingLeft="12dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="更多"
+            android:id="@+id/tv_more"
+            android:textSize="@dimen/normal_text"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="12dp"/>
+    </RelativeLayout>
+    <include layout="@layout/all_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_strategy_item"
+        android:layout_below="@+id/tv_name_item">
+    </include>
+</LinearLayout>

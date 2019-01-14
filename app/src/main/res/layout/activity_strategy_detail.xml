@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="25dp"
+    android:orientation="vertical"
+    android:background="@color/bamboo_little_color"
+    tools:context=".activity.StrategyDetailActivity">
+    <include layout="@layout/action_bar_can_back"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"/>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/ll_strategy">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:background="@color/white"
+                android:id="@+id/rl_head">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/iv_panorama"
+                    android:padding="5dp"
+                    android:layout_centerInParent="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击查看全景"
+                    android:drawableLeft="@mipmap/abc_ic_menu_copy_mtrl_am_alpha"
+                    android:textColor="@color/white"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/tv_ad_info"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/pan"
+                    android:padding="5dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

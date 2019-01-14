@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">途哟</string>
+
+    <string name="load_text">加载中...</string>
+    <string name="picture_logo">这里是一张图片</string>
+    <string name="text_logo">途 中 还 遇 见 你 哟</string>
+    <string name="logo">一 场 难 忘 的 旅 途 哟</string>
+
+    <string name="leader_1">大海，沙滩，美女\n尽在掌握(咳咳)</string>
+    <string name="leader_2">蓝天，青山，田野\n尽收眼底</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">首页</string>
+    <string name="title_strategy">攻略</string>
+    <string name="title_travels">美食</string>
+    <string name="title_notice">消息</string>
+    <string name="title_my">我的</string>
+
+    <string name="cp_search_hint_text">城市中文名或拼音</string>
+    <string name="cp_cancel">取消</string>
+    <string name="cp_no_result">没有找到，换个词试试~</string>
+    <string name="cp_locate_failed">定位失败</string>
+    <string name="cp_locating">正在定位…</string>
+
+    <string name="my_travels">我的游记</string>
+    <string name="my_collect">我的收藏</string>
+    <string name="draft">草稿箱</string>
+    <string name="my_coupon">我的优惠券</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_username">用户名</string>
+    <string name="prompt_email">手机号</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in">登录</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">不符合规定的手机号</string>
+    <string name="error_invalid_username">用户名为空</string>
+    <string name="error_invalid_password">密码太短</string>
+    <string name="error_incorrect_password">密码错误</string>
+    <string name="error_field_required">请填写手机号</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="enroll">注册</string>
+    <string name="login">登录</string>
+    <string name="repeat">此手机号已经注册请勿重复注册</string>
+</resources>

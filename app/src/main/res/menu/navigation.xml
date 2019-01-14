@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <!--<item-->
+        <!--android:id="@+id/navigation_strategy"-->
+        <!--android:icon="@mipmap/strategy_icon"-->
+        <!--android:title="@string/title_strategy" />-->
+
+    <!--<item-->
+        <!--android:id="@+id/navigation_travels"-->
+        <!--android:icon="@mipmap/cate_icon"-->
+        <!--android:title="@string/title_travels" />-->
+    <item
+        android:id="@+id/navigation_notice"
+        android:icon="@mipmap/news_icon"
+        android:title="@string/title_notice" />
+    <item
+        android:id="@+id/navigation_my"
+        android:icon="@mipmap/my_icon"
+        android:title="@string/title_my" />
+</menu>

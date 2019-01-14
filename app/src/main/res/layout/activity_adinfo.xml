@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bamboo_little_color"
+    tools:context="com.example.admin.tourproduct.activity.ADInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/ll_ad"
+        android:visibility="gone">
+        <include layout="@layout/top"/>
+        <include layout="@layout/action_bar_can_back"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/wv_ad"/>
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/pb_ad"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <include layout="@layout/activity_strategy_detail"
+        android:id="@+id/asd_ad"
+        android:visibility="gone"/>
+</RelativeLayout>

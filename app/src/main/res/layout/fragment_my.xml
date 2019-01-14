@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_my"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:paddingTop="25dp"
+        android:background="@color/bamboo_little_color">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/head_sculpture"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/civ_head"
+            android:layout_marginTop="55dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/normal_text"
+            android:src="@mipmap/setting"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="12dp"
+            android:id="@+id/tv_setting"/>
+    </RelativeLayout>
+    <include layout="@layout/icon_item"
+        android:id="@+id/my_travel"/>
+    <include layout="@layout/cut_off_rule"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+    <include layout="@layout/icon_item"
+        android:id="@+id/my_collect"/>
+    <include layout="@layout/cut_off_rule"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+    <include layout="@layout/icon_item"
+        android:id="@+id/draft"/>
+    <include layout="@layout/cut_off_rule"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+    <include layout="@layout/icon_item"
+        android:id="@+id/my_coupon"/>
+    <include layout="@layout/cut_off_rule"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+</LinearLayout>

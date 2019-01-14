@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/et_travel"
+        android:background="@null"
+        android:hint="写评论"
+        android:padding="5dp"
+        android:textSize="@dimen/normal_text"
+        android:layout_toLeftOf="@+id/tv_up"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发表"
+        android:textSize="@dimen/normal_text"
+        android:id="@+id/tv_up"
+        android:textColor="@color/bamboo_little_color"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="25dp"
+    android:id="@+id/ll_home"
+    android:background="@color/bamboo_little_color"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <include layout="@layout/search_action_bar"></include>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+                    <include layout="@layout/all_view_pager"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp">
+
+                    </include>
+                    <include layout="@layout/circle"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </include>
+                </RelativeLayout>
+
+                <include layout="@layout/cut_off_rule"
+                    android:id="@+id/recommend_place">
+                </include>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:background="@color/white"
+                    android:paddingLeft="12dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/tuanzi_top_line"
+                        android:id="@+id/tuanzi_top_line"/>
+                    <ViewFlipper
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoStart="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:inAnimation="@anim/activity_start"
+                        android:outAnimation="@anim/activity_end"
+                        android:id="@+id/propelling_movement_top_line"/>
+                </LinearLayout>
+
+                <include layout="@layout/cut_off_rule"
+                    android:id="@+id/hot_place">
+
+                </include>
+
+                <include layout="@layout/tab_item"
+                    android:id="@+id/home_strategy">
+                </include>
+                <include layout="@layout/tab_item"
+                    android:id="@+id/home_tip">
+                </include>
+                <include layout="@layout/tab_item"
+                    android:id="@+id/home_delicacy">
+                </include>
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,82 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.admin.tourproduct"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.2.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+
+//        ndk {
+//            //选择要添加的对应cpu类型的.so库。
+//            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a','x86', 'x86_64', 'mips', 'mips64'
+//            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+//        }
+//        manifestPlaceholders = [
+//                JPUSH_PKGNAME : applicationId,
+//                JPUSH_APPKEY : "5ee2902a057a3a6464b22701", //JPush上注册的包名对应的appkey.
+//                JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+//        ]
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+            //说明so的路径为该libs路径，关联所有地图SDK的so文件
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:support-vector-drawable:27.1.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:27.1.0'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.6.0'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.github.CN-ZPH:weibo360panorama:v1.0.1'
+    //动态权限管理
+    implementation 'com.github.hotchemi:permissionsdispatcher:3.0.1'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    kapt "com.github.hotchemi:permissionsdispatcher-processor:3.0.1"
+    implementation 'com.github.bumptech.glide:glide:4.5.0'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation 'com.google.zxing:core:3.3.0'
+    implementation 'com.android.support:cardview-v7:27.1.0'
+    implementation files(
+            'libs/BaiduLBS_Android.jar')
+    implementation files('libs/IndoorscapeAlbumPlugin.jar')
+    implementation project(':imageselector')
+    //    implementation files('libs/jcore-android-1.2.3.jar')
+    //    implementation files('libs/jpush-android-3.1.5.jar')
+    implementation files('libs/alipaySdk-20180601.jar')
+}
+
+apply plugin: 'kotlin-android-extensions'

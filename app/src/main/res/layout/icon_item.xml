@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="12dp"
+    android:paddingTop="15dp"
+    android:gravity="center_vertical"
+    android:paddingBottom="15dp">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/collect"
+        android:id="@+id/iv_icon"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_marginLeft="12dp"
+        android:textSize="@dimen/normal_text"
+        android:id="@+id/tv_name"/>
+</LinearLayout>
